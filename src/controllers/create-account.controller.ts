@@ -8,8 +8,8 @@ import {
 } from '@nestjs/common'
 import { hash } from 'bcryptjs'
 import { z } from 'zod'
-import { prismaService } from 'src/prisma/prisma.service'
-import { ZodValidationPipe } from 'src/pipes/zod-validation-pipe'
+import { prismaService } from '@/prisma/prisma.service'
+import { ZodValidationPipe } from '@/pipes/zod-validation-pipe'
 
 const createAccountBodySchema = z.object({
   name: z.string(),
